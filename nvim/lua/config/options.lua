@@ -25,7 +25,6 @@ set.smartcase = true
 -- appearance
 --set.termguicolors = false
 -- set.background = "dark"
--- set.signcolumn = "yes"
 set.fillchars:append({ eob = " " })
 
 -- cursor line
@@ -61,6 +60,9 @@ set.autoread = true
 vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter", "CursorHold" }, {
   command = "checktime",
 })
+
+vim.opt.signcolumn = "yes"
+vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" })
 
 vim.filetype.add({
     pattern = {

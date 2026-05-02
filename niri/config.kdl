@@ -91,7 +91,7 @@ input {
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 layout {
-        gaps 8
+        gaps 6
 
         focus-ring {
             width 0
@@ -99,7 +99,7 @@ layout {
 
         border {
             off 
-            width 2
+            width 1
         }
 
     // Set gaps around windows in logical pixels.
@@ -136,15 +136,15 @@ layout {
     struts {
     }
 }
+// window-rule {
+//     opacity 0.98
+// }
+// window-rule {
+//     match app-id="zen"
+//     opacity 1.0
+// }
 window-rule {
-    opacity 0.98
-}
-window-rule {
-    match app-id="zen"
-    opacity 1.0
-}
-window-rule {
-    geometry-corner-radius 10
+    geometry-corner-radius 6
     clip-to-geometry true
     tiled-state true
     draw-border-with-background false

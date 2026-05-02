@@ -14,7 +14,7 @@ return {
                 icons = {
                     show = {
                         file = true,
-                        folder = false,
+                        folder = true,
                         folder_arrow = true,
                         git = true,
                     },
