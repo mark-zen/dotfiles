@@ -22,7 +22,6 @@ return {
 				base0F = '#ffd594',
 			})
 
-
 			vim.api.nvim_set_hl(0, 'Visual', {
 				bg = '#8c877f',
 				fg = '#fffcf7',

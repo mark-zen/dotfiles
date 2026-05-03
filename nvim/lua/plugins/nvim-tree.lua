@@ -1,6 +1,7 @@
 return {
     "nvim-tree/nvim-tree.lua",
     dependencies = {
+       "DaikyXendo/nvim-material-icon",
         "nvim-tree/nvim-web-devicons",
     },
     config = function()

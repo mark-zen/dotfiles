@@ -13,11 +13,11 @@ return {
     dependencies = { "williamboman/mason.nvim" },
     opts = {
       automatic_enable = true,
-      ensure_installed = { 
+      ensure_installed = {
         "rust_analyzer", "jsonls", "html", "cssls", "tailwindcss",
         "tsgo", "marksman", "yamlls", "oxlint",
         "eslint", "emmet_ls", "svelte", "taplo", "clangd", "gopls",
-        "pyright"
+        "pyright", "jdtls"
       },
     },
   },
@@ -70,7 +70,7 @@ return {
       local other_servers = {
         'html', 'cssls', 'tailwindcss', 'gopls',
         'marksman', 'yamlls', 'oxlint', 'eslint',
-        'emmet_ls', 'svelte', 'taplo', 'clangd', 'pyright'
+        'emmet_ls', 'svelte', 'taplo', 'clangd', 'pyright', 'jdtls'
       }
       for _, lsp in ipairs(other_servers) do
         vim.lsp.enable(lsp)

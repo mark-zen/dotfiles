@@ -2,7 +2,7 @@
 local set = vim.opt
 
 --line nums
-set.relativenumber = false
+set.relativenumber = false 
 set.number = true
 
 --encoding
