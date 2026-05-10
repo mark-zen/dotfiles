@@ -66,14 +66,8 @@ vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" })
 
 vim.filetype.add({
     pattern = {
-        [".*"] = {
-            priority = -math.huge,
-            function(path, bufnr)
-                local content = vim.api.nvim_buf_get_lines(bufnr, 0, 1, false)[1] or ""
-                if content:find("bin/node") or content:find("bin/bun") or content:find("env bun") then
-                    return "javascript"
-                end
-            end,
-        },
+        ["^bin/node$"] = "javascript",
+        ["^bin/bun$"] = "javascript",
+        ["^env bun$"] = "javascript",
     },
 })
