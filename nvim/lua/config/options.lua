@@ -30,6 +30,9 @@ set.fillchars:append({ eob = " " })
 -- cursor line
 set.cursorline = true
 
+-- command line height (1 for a small gap above statusline)
+set.cmdheight = 1
+
 -- 80th column
 set.colorcolumn = "80"
 
