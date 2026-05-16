@@ -36,6 +36,14 @@ return {
                 enable = true,
                 ignore = false,
             },
+            filesystem_watchers = {
+                enable = true,
+                ignore_dirs = {
+                    "target",
+                    "node_modules",
+                    ".git",
+                },
+            },
             filters = {
                 dotfiles = false,
                 git_ignored = false,
